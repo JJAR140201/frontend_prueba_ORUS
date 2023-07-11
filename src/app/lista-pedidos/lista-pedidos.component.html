@@ -1,1 +1,20 @@
-<p>lista-pedidos works!</p>
+<h2>Lista de pedidos</h2>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Tipo de fruta</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Fecha Creacion</th>
+            <th>Fecha Modificacion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let pedidos of pedidos">
+            <td>{{pedidos.listaFrutas}}</td>
+            <td>{{pedidos.valorTotal}}</td>
+            <td>{{pedidos.fechaCreacion}}</td>
+            <td>{{pedidos.fechaActualizacion}}</td>
+        </tr>
+    </tbody>
+</table>
