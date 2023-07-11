@@ -1,1 +1,21 @@
-<p>lista-frutas works!</p>
+<h2>Lista de frutas</h2>
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Tipo de fruta</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+            <th>Fecha Creacion</th>
+            <th>Fecha Modificacion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let frutas of frutas">
+            <td>{{frutas.tipo}}</td>
+            <td>{{frutas.cantidad}}</td>
+            <td>{{frutas.precio}}</td>
+            <td>{{frutas.fechaCreacion}}</td>
+            <td>{{frutas.fechaActualizacion}}</td>
+        </tr>
+    </tbody>
+</table>
